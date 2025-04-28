@@ -1,0 +1,9 @@
+SELECT
+	id,
+	name,
+	continent,
+	currency
+
+FROM countries
+WHERE (currency LIKE 'P%' OR currency LIKE 'U%') AND continent = 'South America'
+ORDER BY currency DESC, id
